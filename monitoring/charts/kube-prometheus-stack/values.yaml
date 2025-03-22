@@ -4058,9 +4058,9 @@ prometheus:
     ## Example which selects ServiceMonitors with label "prometheus" set to "somelabel"
     # serviceMonitorSelector:
     #   matchLabels:
-    #     prometheus: somelabel
-        matchLabels:
-         app.kubernetes.io/part-of: flux
+    # #     prometheus: somelabel
+    #     matchLabels:
+    #      app.kubernetes.io/part-of: flux
 
     ## Namespaces to be selected for ServiceMonitor discovery.
     ##
