@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-webapp
+  namespace: nginx-webapp
+spec:
+  type: ClusterIP
+  selector:
+    app: nginx-webapp
+  ports:
+    - name: http
+      port: 8080
